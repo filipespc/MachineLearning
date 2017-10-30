@@ -30,11 +30,12 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
+p_all = sigmoid(X*all_theta');
 
-
-
-
-
+% Calculate the index offset for each max in each row
+index_off = (0:size(p_all,1)-1)'*num_labels;
+% Finds max for each row and substracts index offset.
+p = find(p_all' == max(p_all')) - index_off;
 
 % =========================================================================
 

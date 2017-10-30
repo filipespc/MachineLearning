@@ -21,11 +21,17 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
+X = [ones(size(X,1),1) X];
 
+Layer1 = sigmoid(X*Theta1');
+Layer1 = [ones(size(Layer1,1),1) Layer1];
 
+out = sigmoid(Layer1*Theta2');
 
-
-
+% Calculate the index offset for each max in each row
+index_off = (0:size(out,1)-1)'*num_labels;
+% Finds max for each row and substracts index offset.
+p = find(out' == max(out')) - index_off;
 
 
 
