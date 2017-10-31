@@ -26,12 +26,9 @@ centroids = zeros(K, n);
 % Note: You can use a for-loop over the centroids to compute this.
 %
 
-
-
-
-
-
-
+idBool = (idx == 1:K);
+idCount = sum(idBool);
+centroids = (idBool'*X)./idCount';
 
 % =============================================================
 
