@@ -147,26 +147,72 @@ my_ratings = zeros(1682, 1);
 
 %% FILIPE
 
-my_ratings(1) = 4;
-my_ratings(11) = 5;
-my_ratings(22) = 4;
-my_ratings(27) = 2;
-my_ratings(28) = 2;
-my_ratings(29) = 2;
-my_ratings(50) = 5;
-my_ratings(56) = 5;
-my_ratings(67) = 2;
-my_ratings(69) = 5;
-my_ratings(78) = 2;
-my_ratings(82) = 3;
-my_ratings(96) = 5;
-my_ratings(98) = 5;
-my_ratings(99) = 1;
-my_ratings(121) = 1;
-my_ratings(127) = 5;
-my_ratings(132) = 3;
-my_ratings(179) = 5;
-my_ratings(204) = 5;
+%my_ratings(1) = 4;
+%my_ratings(11) = 5;
+%my_ratings(22) = 4;
+%my_ratings(27) = 2;
+%my_ratings(28) = 2;
+%my_ratings(29) = 2;
+%my_ratings(50) = 5;
+%my_ratings(56) = 5;
+%my_ratings(67) = 2;
+%my_ratings(69) = 5;
+%my_ratings(78) = 2;
+%my_ratings(82) = 3;
+%my_ratings(96) = 5;
+%my_ratings(98) = 5;
+%my_ratings(99) = 1;
+%my_ratings(121) = 1;
+%my_ratings(127) = 5;
+%my_ratings(132) = 3;
+%my_ratings(179) = 5;
+%my_ratings(204) = 5;
+
+%% DIHEGO
+
+%my_ratings(1) = 3;
+%my_ratings(8) = 3;
+%my_ratings(11) = 5;
+%my_ratings(21) = 3;
+%my_ratings(25) = 3;
+%my_ratings(29) = 5;
+%my_ratings(35) = 1;
+%my_ratings(67) = 1;
+%my_ratings(71) = 5;
+%my_ratings(78) = 4;
+%my_ratings(82) = 5;
+%my_ratings(94) = 4;
+%my_ratings(95) = 4;
+%my_ratings(118) = 2;
+%my_ratings(120) = 1;
+%my_ratings(127) = 1;
+%my_ratings(131) = 3;
+%my_ratings(132) = 3;
+%my_ratings(133) = 5;
+%my_ratings(134) = 3;
+%my_ratings(151) = 5;
+%my_ratings(155) = 5;
+%my_ratings(174) = 3;
+%my_ratings(179) = 3;
+%my_ratings(185) = 5;
+%my_ratings(196) = 5;
+%my_ratings(204) = 5;
+
+
+%% PINK
+
+my_ratings(40) = 5;
+my_ratings(29) = 4;
+my_ratings(50) = 3;
+my_ratings(144) = 2;
+my_ratings(155) = 4;
+my_ratings(183) = 3;
+my_ratings(204) = 4;
+my_ratings(210) = 4;
+my_ratings(254) = 1;
+my_ratings(288) = 5;
+my_ratings(307) = 5;
+my_ratings(526) = 5;
 
 fprintf('\n\nNew user ratings:\n');
 for i = 1:length(my_ratings)
